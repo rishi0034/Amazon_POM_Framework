@@ -35,7 +35,14 @@ public class HomePage extends TestBase {
 	 List<WebElement> HeaderLinks;
 	
 	
-	//AWS PAGE
+
+	//AWS Page
+	@FindBy(xpath="//a[text()='Amazon Web Services']")
+	WebElement AWSLink;
+	
+	//coupons page
+	@FindBy(xpath="//a[contains(text(),'Coupons')]")
+	WebElement couponspagelink;
 	
 	
 	
@@ -70,7 +77,16 @@ public class HomePage extends TestBase {
 	}
 	
 	
+	public AwsPage clicking_On_AWS() {
+		AWSLink.click();
+		return new AwsPage();
+	}
 	
+	
+	public CouponsPage Nav_To_couponsPage(){
+		couponspagelink.click();
+		return new CouponsPage();
+	}
 	
 	
 }
