@@ -203,9 +203,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [aa34a57f-c75d-4ec7-8fd4-f63285734eb5, findElement {using=xpath, value=//div[contains(@class,&apos;acsUxWidget&apos;)]/div/div/div/div/div/div/div/img}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:23081, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14404, moz:profile: C:\Users\trish\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:23081/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa34a57f-c75d-4ec7-8fd4-f63285734eb5
+Command: [5cbf7700-e4b3-4b87-984b-05712cfef225, findElement {using=xpath, value=//div[contains(@class,&apos;acsUxWidget&apos;)]/div/div/div/div/div/div/div/img}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:30517, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20296, moz:profile: C:\Users\trish\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30517/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5cbf7700-e4b3-4b87-984b-05712cfef225
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -365,6 +365,9 @@ Session ID: aa34a57f-c75d-4ec7-8fd4-f63285734eb5
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.amazon.qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.amazon.qa.testcases.HomePageTest&quot;/&gt;
@@ -413,60 +416,60 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Validate_Text2')
 data.setCell(0, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(0, 3, 13995);
+data.setCell(0, 3, 13406);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Fail_Validate_Image')
 data.setCell(1, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(1, 3, 10419);
+data.setCell(1, 3, 10385);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Awsaction')
 data.setCell(2, 2, 'com.amazon.qa.testcases.HomePageTest')
-data.setCell(2, 3, 7504);
+data.setCell(2, 3, 8558);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LoginPageTitle')
 data.setCell(3, 2, 'com.amazon.qa.testcases.HomePageTest')
-data.setCell(3, 3, 4079);
+data.setCell(3, 3, 4044);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ImageValidations')
+data.setCell(4, 1, 'validateText')
 data.setCell(4, 2, 'com.amazon.qa.testcases.AwsPageTest')
-data.setCell(4, 3, 3112);
+data.setCell(4, 3, 3306);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateText')
-data.setCell(5, 2, 'com.amazon.qa.testcases.AwsPageTest')
-data.setCell(5, 3, 3109);
+data.setCell(5, 1, 'ValidateNumberOfLinksInHeader')
+data.setCell(5, 2, 'com.amazon.qa.testcases.HomePageTest')
+data.setCell(5, 3, 3221);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ValidateNumberOfLinksInHeader')
-data.setCell(6, 2, 'com.amazon.qa.testcases.HomePageTest')
-data.setCell(6, 3, 3074);
+data.setCell(6, 1, 'ImageValidations')
+data.setCell(6, 2, 'com.amazon.qa.testcases.AwsPageTest')
+data.setCell(6, 3, 3079);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'SignIn')
 data.setCell(7, 2, 'com.amazon.qa.testcases.HomePageTest')
-data.setCell(7, 3, 2906);
+data.setCell(7, 3, 2903);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Validate_Text1')
+data.setCell(8, 1, 'Validate_Image')
 data.setCell(8, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(8, 3, 156);
+data.setCell(8, 3, 85);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Validate_Image')
+data.setCell(9, 1, 'Validate_Text1')
 data.setCell(9, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(9, 3, 78);
+data.setCell(9, 3, 43);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'Validate_HeaderSize')
 data.setCell(10, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(10, 3, 30);
+data.setCell(10, 3, 32);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Validate_Page_Title')
-data.setCell(11, 2, 'com.amazon.qa.testcases.CouponsPageTest')
-data.setCell(11, 3, 12);
+data.setCell(11, 1, 'ValidateAwsPageTitle')
+data.setCell(11, 2, 'com.amazon.qa.testcases.AwsPageTest')
+data.setCell(11, 3, 14);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'ValidateAwsPageTitle')
-data.setCell(12, 2, 'com.amazon.qa.testcases.AwsPageTest')
-data.setCell(12, 3, 9);
+data.setCell(12, 1, 'Validate_Page_Title')
+data.setCell(12, 2, 'com.amazon.qa.testcases.CouponsPageTest')
+data.setCell(12, 3, 8);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -499,165 +502,165 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginPageTitle</span>
-                <span class="method-start">9793 ms</span>
+                <span class="method-start">10446 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13917 ms</span>
+                <span class="method-start">14511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">16728 ms</span>
+                <span class="method-start">17806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignIn</span>
-                <span class="method-start">24901 ms</span>
+                <span class="method-start">25960 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27809 ms</span>
+                <span class="method-start">28863 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32059 ms</span>
+                <span class="method-start">32877 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ValidateNumberOfLinksInHeader</span>
-                <span class="method-start">40000 ms</span>
+                <span class="method-start">41213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43098 ms</span>
+                <span class="method-start">44446 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">46883 ms</span>
+                <span class="method-start">47624 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Awsaction</span>
-                <span class="method-start">54567 ms</span>
+                <span class="method-start">55914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62074 ms</span>
+                <span class="method-start">64480 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.amazon.qa.testcases.AwsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66645 ms</span>
+                <span class="method-start">69065 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateText</span>
-                <span class="method-start">75594 ms</span>
+                <span class="method-start">79143 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">78705 ms</span>
+                <span class="method-start">82467 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">84514 ms</span>
+                <span class="method-start">86717 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ValidateAwsPageTitle</span>
-                <span class="method-start">94798 ms</span>
+                <span class="method-start">96665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94813 ms</span>
+                <span class="method-start">96681 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">100303 ms</span>
+                <span class="method-start">101112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ImageValidations</span>
-                <span class="method-start">109862 ms</span>
+                <span class="method-start">110578 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">112977 ms</span>
+                <span class="method-start">113668 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.amazon.qa.testcases.CouponsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">118328 ms</span>
+                <span class="method-start">118694 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Validate_Page_Title</span>
-                <span class="method-start">130897 ms</span>
+                <span class="method-start">128117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">130909 ms</span>
+                <span class="method-start">128126 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">135369 ms</span>
+                <span class="method-start">132656 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Validate_Image</span>
-                <span class="method-start">144923 ms</span>
+                <span class="method-start">141942 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">145005 ms</span>
+                <span class="method-start">142029 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">148881 ms</span>
+                <span class="method-start">145668 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Validate_Text1</span>
-                <span class="method-start">158613 ms</span>
+                <span class="method-start">154785 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">158771 ms</span>
+                <span class="method-start">154830 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">162706 ms</span>
+                <span class="method-start">158665 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Validate_HeaderSize</span>
-                <span class="method-start">174843 ms</span>
+                <span class="method-start">171978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">174876 ms</span>
+                <span class="method-start">172025 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">179071 ms</span>
+                <span class="method-start">176798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Validate_Text2</span>
-                <span class="method-start">190510 ms</span>
+                <span class="method-start">189268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">204505 ms</span>
+                <span class="method-start">202689 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">207671 ms</span>
+                <span class="method-start">206574 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Fail_Validate_Image</span>
-                <span class="method-start">218910 ms</span>
+                <span class="method-start">215935 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">229333 ms</span>
+                <span class="method-start">226332 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
