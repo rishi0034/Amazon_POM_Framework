@@ -4,6 +4,7 @@ package com.amazon.qa.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,6 +34,18 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath="//div[@id='nav-xshop']//a")
 	 List<WebElement> HeaderLinks;
+	
+	@FindBy(xpath="//a[contains(text(),'Warehouse Deals')]")
+	WebElement WareHouseEle;
+	
+	@FindBy(xpath="//h4[contains(text(),'Laptops & Tablets')]")
+	WebElement Lap_and_Tab_icon;
+	
+	@FindBy(xpath="//input[@id='twotabsearchtextbox']")
+	WebElement SearchBox;
+	
+	@FindBy(xpath="//input[@id='nav-search-submit-button']")
+	WebElement SearchBtn;
 	
 	
 
@@ -87,6 +100,25 @@ public class HomePage extends TestBase {
 		couponspagelink.click();
 		return new CouponsPage();
 	}
+	
+	public String LT_in_Warehouse(){
+		WareHouseEle.click();
+		return Lap_and_Tab_icon.getText();
+	}
+	
+	public void CartFNTY(String Pro ) {
+		SearchBox.sendKeys(Pro);
+		SearchBtn.click();
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
 	
 	
 }
